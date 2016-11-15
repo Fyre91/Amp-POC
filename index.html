@@ -1,0 +1,288 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Montserrat-Regular'),
+          url(https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2'),
+          url(https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+      }
+      body {
+        font-family: "Montserrat";
+      }
+      .header {
+        width: 100%;
+        height: 50px;
+        background-color: #2e71f0;
+        clear: both;
+      }
+      .logo {
+        float: left;
+        margin-left: 10px;
+        margin-top: 5px;
+        clear: both;
+      }
+      .logo amp-img {
+        float: left;
+      }
+      .logo span {
+        color: #fff;
+        float: left;
+        line-height: 50px;
+        margin-left: 10px;
+      }
+      .sidebar-logo {
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      #sidebar .category, .category a {
+        text-decoration: none;
+        color: #000;
+      }
+      #sidebar, amp-sidebar {
+        background-color: #fff;
+      }
+      .hero-container {
+        height: 375px;
+        width: 100%;
+        position: relative;
+      }
+      .start-btn {
+        position: absolute;
+        bottom: 50px;
+        height: 60px;
+        width: 180px;
+        text-align: center;
+        background-color: #2e71f0;
+        color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 2px;
+        outline: 0;
+        border: 0;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+      }
+      .card-wrapper {
+        margin: 0 10px;
+        margin-top: 50px;
+        border: 2px solid #ddd;
+        overflow: hidden;
+        height: 180px;
+        text-align: center;
+      }
+      .img-wrapper {
+        float: left;
+      }
+      .details-wrapper {
+        float: left;
+        margin-left: 30px;
+        margin-top: 10px;
+      }
+      .details-wrapper h3, .details-wrapper p {
+        margin: 0;
+      }
+      .carousel-item {
+        width: 90%;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #e9e9e9;
+        border: 1px solid #ddd;
+      }
+      .amp-carousel-button.amp-disabled {
+        visibility: visible;
+        background-color: rgba(255, 0, 0, .5);
+      }
+      amp-carousel {
+        margin-top: 80px;
+      }
+      .border-cta {
+        bottom: 50px;
+        height: 60px;
+        width: 94%;
+        text-align: center;
+        background-color: #2e71f0;
+        color: #fff;
+        border-radius: 2px;
+        outline: 0;
+        border: 0;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+      }
+      .info-wrapper {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    </amp-font>
+    <div class="header">
+      <div class="logo">
+        <amp-img layout="fixed" width="40" height="40" src="//res.cloudinary.com/urbanclap/image/upload/w_30,q_40/v1470376695/web-assets/mobile_logo_4314235235.png">
+        </amp-img>
+        <span>UrbanClap</span>
+      </div>
+
+      <a on="tap:sidebar.toggle" class="sidebar-logo">
+        <amp-img src="/assets/sidebar.png" alt="navigation" width="27" height="32"></amp-img>
+      </a>
+    </div>
+
+    <amp-sidebar id='sidebar'
+      layout="nodisplay"
+      side="right">
+      <div class="topheader">
+        <a href="/" class="category">
+          My Projects
+        </a>
+      </div>
+      <hr/>
+      <h4 class="category">
+        <a href="/">Join as professional</a>
+      </h4>
+      <h4 class="category">
+        <a href="/">How It Works</a>
+      </h4>
+      <h4 class="category">
+        <a href="/">Blog</a>
+      </h4>
+      <h4 class="category">
+        <a href="/">About UC</a>
+      </h4>
+    </amp-sidebar>
+
+    <div class="hero-container">
+      <amp-img  alt="an image" width="600" height="375" src="https://res.cloudinary.com/urbanclap/image/upload/categories/home_screen_v3/discover/promocards/mobile+web+luminosity/WP_MobileWeb-min.jpg" layout="fill">
+      </amp-img>
+      <button class="start-btn">
+        Get Started
+      </button>
+    </div>
+
+    <div class='card-wrapper'>
+      <div class="info-wrapper">
+        <div class="img-wrapper">
+          <amp-img width="110" height="110" src="https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_cover_seo/images/56e4f6aa0a49c8cd79227ecb/1478239051331-a555be11ad868e3c5f4e640d0bbc8fc3.jpeg">
+          </amp-img>
+        </div>
+        <div class="details-wrapper">
+          <h3>Pro</h3>
+          <p>New Delhi</p>
+          <p>Rs 17,400</p>
+        </div>
+      </div>
+      <button class="border-cta">
+        Book now
+      </button>
+    </div>
+
+    <div class='card-wrapper'>
+      <div class="info-wrapper">
+        <div class="img-wrapper">
+          <amp-img width="110" height="110" src="https://res.cloudinary.com/urbanclap/image/upload/t_medium_res_cover_seo/images/5451e75ee73efb030086c0fe/1478233757584-d57f4705c84e7b922f656bd77bd1b0b1.jpeg">
+          </amp-img>
+        </div>
+        <div class="details-wrapper">
+          <h3>Pro</h3>
+          <p>New Delhi</p>
+          <p>Rs 17,400</p>
+        </div>
+      </div>
+      <button class="border-cta">
+        Book now
+      </button>
+    </div>
+
+    <amp-carousel controls height="400" width="400" type="slides" layout="responsive">
+      <div class='carousel-item'>
+        <div class="details-wrapper">
+          <h3>Pro</h3>
+          <p>New Delhi</p>
+          <p>Rs 17,400</p>
+        </div>
+      </div>
+      <div class='carousel-item'>
+        <div class="details-wrapper">
+          <h3>Pro</h3>
+          <p>New Delhi</p>
+          <p>Rs 17,400</p>
+        </div>
+      </div>
+      <div class='carousel-item'>
+        <div class="details-wrapper">
+          <h3>Pro</h3>
+          <p>New Delhi</p>
+          <p>Rs 17,400</p>
+        </div>
+      </div>
+      <div class='carousel-item'>
+        <div class="details-wrapper">
+          <h3>Pro</h3>
+          <p>New Delhi</p>
+          <p>Rs 17,400</p>
+        </div>
+      </div>
+    </amp-carousel>
+    <amp-analytics type="googleanalytics">
+      <script type="application/json">
+      {
+        "requests": {
+          "pageview": "https://example.com/analytics?url=${canonicalUrl}&title=${title}&acct=${account}",
+          "event": "https://example.com/analytics?eid=${eventId}&elab=${eventLabel}&acct=${account}"
+        },
+        "vars": {
+          "account": "ABC123"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          },
+          "trackAnchorClicks": {
+            "on": "click",
+            "selector": "a",
+            "request": "event",
+            "vars": {
+              "eventId": "42",
+              "eventLabel": "clicked on a link"
+            }
+          }
+        }
+      }
+      </script>
+      </amp-analytics>
+  </body>
+</html>

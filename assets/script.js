@@ -1,0 +1,3 @@
+function getClicked() {
+  alert("ASdOWPQJKALSD");
+}
